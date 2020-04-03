@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import TopMeNu from './Component/topmenu/TopMeNu.js';
+import Header from './Component/header/Header.js';
+import ConTen from './Component/content/ConTen.js';
+import login from './Component/login/login.js';
+import dieuhuong from './Component/router/dieuhuong.js';
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="_122">
+     <TopMeNu/>
+     <Header/>
+    <dieuhuong></dieuhuong>
+
+    
+     <ConTen tieude="bai1"/>
+
+     <ConTen tieude="bai2"/>
+
+     <ConTen tieude="bai3"/>
+
+    
+
     </div>
   );
 }
 
 export default App;
+
+
